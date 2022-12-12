@@ -24,7 +24,7 @@ RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/s
     mkdir ~/.kube
 
 ## Install K9s
-## RUN curl -sS https://webinstall.dev/k9s | bash    
+RUN curl -sS https://webinstall.dev/k9s | bash    
 
 ## Install Helm
 RUN curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 && \
