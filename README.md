@@ -31,14 +31,6 @@ To open the workspace, simply click on the *Open in Gitpod* button, or use [this
             └── application.properties
 ```
   - change the JOSDK Quarkus extension version and the Quarkus version in the `pom.xml`:
-```xml
-<quarkus-sdk.version>4.0.1</quarkus-sdk.version>
-<quarkus.version>2.12.2.Final</quarkus.version>
-```
-  remove the following dependency in the `pom.xml`:
-```xml
-quarkus-operator-sdk-csv-generator
-```
   - add these dependencies in `pom.xml` for k3s compatibility:
 ```xml
     <!-- Mandatory for k3s : see https://github.com/fabric8io/kubernetes-client/issues/1796 -->
